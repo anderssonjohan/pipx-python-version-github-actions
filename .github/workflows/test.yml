@@ -6,7 +6,7 @@ jobs:
   pip_install_poetry:
     strategy:
       matrix:
-        python-version: [3.7.8, 3.11.1]
+        python-version: [3.7.17, 3.11.1]
         os: [ubuntu-20.04, ubuntu-22.04]
     runs-on: ${{ matrix.os }}
     steps:
@@ -21,7 +21,7 @@ jobs:
   pipx_install_poetry:
     strategy:
       matrix:
-        python-version: [3.7.8, 3.11.1]
+        python-version: [3.7.17, 3.11.1]
         os: [ubuntu-20.04, ubuntu-22.04]
     runs-on: ${{ matrix.os }}
     steps:
